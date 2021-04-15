@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+    </style>
+{% endblock %}
+
+{% block content %}
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <div class="w3-panel w3-center w3-margin w3-padding-16">
+    <h2 class="w3-monospace" style="text-shadow:1px 1px 0 #444">
+      <i>Left Brain - Right Brain Thinker <br> With a Passion to Learn New Skills
+      and Technologies.</i></h2>
+    <br>
+    <br>
+  </div>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="{{ url_for('static', filename='images/selfie.png') }}" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>
+              Developer | Analyst | Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Virginia Beach, VA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>bettychitty@outlook.com</p>
+          <hr>
+
+          <p class="w3-medium w3-center"><b>
+            <br>
+            <i class="fa fa-asterick fa-fw wr-margin-right w3-text-indigo w3-padding-24"></i>
+            Skills</b></p>
+
+          <p class="w3-center">
+            Machine Learning<br>
+            Web Scraping<br>
+            Extract, Transform, Load (ETL)<br>
+            Webscraping<br>
+            Database Systems<br>
+            Data APIs<br>
+            Text Editors<br>
+            IDEs<br>
+            Excel, PowerPoint
+          </p>
+
+          <br>
+          <hr>
+
+          <p class="w3-medium"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo">
+          </i>Programming Languages</b></p>
+
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:90%"></div>
+          </div>
+
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:80%">
+              <div class="w3-center w3-text-white"></div>
+            </div>
+          </div>
+
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:40%">
+              <div class="w3-center w3-text-white"></div>
+            </div>
+          </div>
+
+          <p>PHP</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:20%">
+              <div class="w3-center w3-text-white"></div>
+            </div>
+          </div>
+          <br>
+            <hr>
+
+          <p class="w3-medium"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo">
+          </i>Web Development</b></p>
+          <p>HTML | HTML5</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:90%"></div>
+          </div>
+
+          <p>CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:90%"></div>
+          </div>
+
+          <p>Javascript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:60%"></div>
+          </div>
+
+          <p>W3.CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:60%"></div>
+          </div>
+
+          <p>Bootstrap</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="height:24px;width:50%">
+              <div class="w3-center w3-text-white"></div>
+            </div>
+          </div>
+
+          <br>
+            <hr>
+
+          <p class="w3-medium w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>
+            Web Frameworks</b></p>
+          <p>Django</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:70%"></div>
+          </div>
+          <p>Flask</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-indigo" style="height:24px;width:60%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-padding w3-margin-bottom">
+
+        <h2 class="w3-text-indigo w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+        </i>I am Betty Chitty.</h2>
+
+        <div class="w3-container">
+        <p> I am an analyst, full-stack developer, oil painter. I would like to say this makes me a unicorn in the
+          developer world, having the ability to think analytically and creatively. This would be a common
+          misconception as developers and artists are very similar, by nature and in their problem-solving process.
+          This is why you will often find developers are also artists.
+          <br>
+          <br>
+          Data Extractions and Transformations are my favorite challenges of the data process. When working through
+          complex data issues, work seems more like a puzzle or a logic problem to be solved. In every project,
+          this is the best time for me to learn about my data. When the data seems "too good to be true", this is
+          when I invoke methodology from the scientific method and attempt to prove it wrong.
+        </p>
+        </div>
+        <br>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+        <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Business Analyst | Data Engineer / Radiology Partners</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - Aug 2020</h6>
+          <p>Strategic problem solver. Responsible for the ETL and data validation processes of the Data Warehouse
+            using Python and SQL Server. Determined data requirements for new radiology practices and served as a
+            liaison for the onboarding process. Coordinated with development teams to identify needs and provide
+            support, including the parsing and extraction of data. Automated the ETL and validation process.</p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Reporting Applications Administrator / MBB Radiology</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Sept 2018</h6>
+          <p>Generated reports and database queries using SQL and python. Developed automated solutions for data
+            processes using python, excel, and PowerPoint. Implemented data wrangling: cleaning, transforming,
+            merging, and reshaping data frames. Responsible for the validation of correct data measures.
+            Parsed data from various file extensions including csv, xlsx, pdf, txt, xml and hl7 files.
+          </p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Office Manager / University of North Florida, Mathematics & Statistics</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2011 - Dec 2016</h6>
+          <p>Maintains daily operations of the mathematics and statistics department. Responsible for budgeting,
+            hiring process, faculty travel and staff training. Point of contact for all part time faculty members
+            and student employees. Supervisory role.</p>
+            <hr>
+        </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Intelligence Analyst / U.S. Army OIF III (Operation Iraqi Freedom)</b></h5>
+            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2004 - Nov 2005</h6>
+            <p>Deployed to Iraq with the 42nd Infantry Division. Responsible for data gathering, analysis, and
+              reporting to higher command on enemy operations. Worked closely with various sections, NCOs, and
+              officers. Official smoothie maker for the overnight shift, using free food items from the dining facility.
+            </p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Intelligence Analyst / Army National Guard</b></h5>
+            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2001 - May 2009</h6>
+            <p>Strategic analysis of enemy operations through the analysis of various incoming intelligence reporting
+              systems. Created daily briefings for the brigade commander and pilots, this included map analysis for
+              visual representation of their specific missions. PowerPoint presentations were given weekly to the
+              operations command for updates and forecasts. Determined elevation and grid azimuths with maps and map
+              overlays. Evaluated terrain and recorded topographical information. Analyzed satellite imagery. </p>
+        </div>
+
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Florida State College of Jacksonville / Certificate in Web Development</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2018</h6>
+          <p>Web Development</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of North Florida / MBA</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
+          <p>Finance & Economics</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of North Florida / BA</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2010</h6>
+          <p>Pychology | Studio Art</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Borough of Manhattan Community College / AA </b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007 - 2009</h6>
+          <p>Liberal Arts</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+{% endblock %}

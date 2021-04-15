@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Betty Chitty Online</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    .bg-image {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-image: linear-gradient(to bottom right, rgb(18, 90, 161), rgb(139, 164, 189)),
+            url("{{ url_for('static', filename='images/blended.jpg') }}");
+        background-blend-mode: color-burn;
+
+        min-height: 100%;
+        background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+        background-color: rgb(21, 34, 56); /* Fallback color */
+        background-color: rgba(18, 31, 31, 0.7); /* Black w/opacity/see-through */
+        color: #ffffff;
+
+        font-weight: bold;
+        border: 2px solid #f1f1f1;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        width: 90%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="w3-bottom w3-opacity-min">
+        <div class="w3-row w3-padding w3-white w3-opacity-min w3-border-top">
+            <div class="w3-col s3">
+                <a href="/home" class="w3-button w3-block">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="/about" class="w3-button w3-block">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="/portfolio" class="w3-button w3-block">PORTFOLIO</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="/contact" class="w3-button w3-block">CONTACT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min">
+        <a href="/home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+        <a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="/portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="bg-text">
+            <h2 style="font-size:2vw">Full Stack Developer and Artist</h2>
+            <br>
+            <h1 style="font-size:8vw">I am Betty Chitty.</h1>
+            <br>
+            <h3 style="font-size:1.5vw">Left Brain / Right Brain / Analytics</h3>
+            <br>
+            <h6 style="font-size:1vw">from a left brain - right brain - thinker</h6>
+        </div>
+
+        <div id="content" class="container-fluid">
+            {% block content %}{% endblock %}
+        </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+    </style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Contact Section -->
+  <div class="w3-panel w3-center w3-margin w3-padding-16">
+    <h2 class="w3-monospace" style="text-shadow:1px 1px 0 #444">
+      <i>I'm Always Looking For New Opportunities.</i></h2>
+    <br>
+    <br>
+  </div>
+
+  <div class="w3-container w3-padding-42 w3-middle" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-24">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="mailto:bettychitty@outlook.com" method="post" enctype="text/plain" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+    <br>
+    <br>
+    <br>
+  </div>
+
+{% endblock %}
