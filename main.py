@@ -27,7 +27,7 @@ def about():
              "her mobile home. Could this finally be the moment her home is ripped off the concrete blocks and " \
              "thrown from the trailer park?' That was also dumb, I wasn't a very good writer at the time. " \
              "\n" \
-             "I also had no idea what I was writing about. I just decided to keep writing, almost as " \
+             "I also had no idead what I was writing about. I just decided to keep writing, almost as " \
              "if the story would be handed to me from the popcorn ceilings or paneled walls of the trailer I actually " \
              "lived in. When I first started programming, I found myself falling in to the same traps I had as a 13 " \
              "year old trying to write the best novel ever written. I tried to start writing the best code ever" \
