@@ -49,7 +49,7 @@ def about():
 
 @app.route("/portfolio")
 def portfolio():
-    return render_template("portfolio.html", title="Experience Coming Soon")
+    return render_template("portfolio.html", title="Portfolio Coming Soon")
 
 
 @app.route("/contact")
