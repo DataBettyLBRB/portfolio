@@ -13,7 +13,6 @@
 
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-
     body, html {
         height: 100%;
         color: #777;
@@ -29,11 +28,7 @@
             url("{{ url_for('static', filename='images/blended.jpg') }}");
         background-blend-mode: color-burn;
 
-        border-bottom-style: solid;
-        border-width: 1px;
-        border-color: light-grey;
-
-        min-height: 75%;
+        min-height: 100%;
         background-size: cover;
     }
 
@@ -47,32 +42,16 @@
         border: 2px solid #f1f1f1;
 
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
 
         transform: translate(-50%, -50%);
         z-index: 2;
 
         width: 90%;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .scroll {
-        padding-top: 7%;
+        padding-top: 5%;
         padding-bottom: 2%;
-    }
-
-    a:link, a:visited {
-        color: black;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-        .bg-image {
-            background-attachment: scroll;
-            min-height: 75%;
-        }
+        text-align: center;
     }
 
 </style>
